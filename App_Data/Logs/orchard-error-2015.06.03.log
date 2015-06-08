@@ -1,0 +1,918 @@
+2015-06-03 10:05:30,140 [81] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/styles/font-awesome.min.css failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/styles/font-awesome.min.css
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:05:30,292 [81] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: A 'script' named '/Themes/MyTheme/Scripts/jquery.flexslider-min.js' could not be found.
+   at Orchard.UI.Resources.ResourceManager.BuildRequiredResources(String resourceType) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\UI\Resources\ResourceManager.cs:line 263
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+   at Orchard.Core.Shapes.CoreShapes.WriteResources(Object Display, TextWriter Output, String resourceType, Nullable`1 includeLocation, Nullable`1 excludeLocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 394
+   at CallSite.Target(Closure , CallSite , CoreShapes , Object , TextWriter , String , ResourceLocation , Object )
+   at Orchard.Core.Shapes.CoreShapes.HeadScripts(Object Display, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 320
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.DocumentZone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 280
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_MyTheme_Views_Document_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Document.cshtml:line 40
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 101
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-03 10:05:31,223 [79] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/favicon.ico
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/styles/font-awesome.min.css failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/styles/font-awesome.min.css
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:05:31,223 [79] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/favicon.ico
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: A 'script' named '/Themes/MyTheme/Scripts/jquery.flexslider-min.js' could not be found.
+   at Orchard.UI.Resources.ResourceManager.BuildRequiredResources(String resourceType) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\UI\Resources\ResourceManager.cs:line 263
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+   at Orchard.Core.Shapes.CoreShapes.WriteResources(Object Display, TextWriter Output, String resourceType, Nullable`1 includeLocation, Nullable`1 excludeLocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 394
+   at CallSite.Target(Closure , CallSite , CoreShapes , Object , TextWriter , String , ResourceLocation , Object )
+   at Orchard.Core.Shapes.CoreShapes.HeadScripts(Object Display, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 320
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.DocumentZone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 280
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_MyTheme_Views_Document_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Document.cshtml:line 40
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 101
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-03 10:06:05,789 [7] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:05,829 [7] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: A 'script' named 'jquery.flexslider-min.js' could not be found.
+   at Orchard.UI.Resources.ResourceManager.BuildRequiredResources(String resourceType) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\UI\Resources\ResourceManager.cs:line 263
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+   at Orchard.Core.Shapes.CoreShapes.WriteResources(Object Display, TextWriter Output, String resourceType, Nullable`1 includeLocation, Nullable`1 excludeLocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 394
+   at CallSite.Target(Closure , CallSite , CoreShapes , Object , TextWriter , String , ResourceLocation , Object )
+   at Orchard.Core.Shapes.CoreShapes.HeadScripts(Object Display, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 320
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.DocumentZone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 280
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_MyTheme_Views_Document_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Document.cshtml:line 40
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 101
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-03 10:06:06,406 [45] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/favicon.ico
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 244689598-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:06,418 [45] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/favicon.ico
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: A 'script' named 'jquery.flexslider-min.js' could not be found.
+   at Orchard.UI.Resources.ResourceManager.BuildRequiredResources(String resourceType) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\UI\Resources\ResourceManager.cs:line 263
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+   at Orchard.Core.Shapes.CoreShapes.WriteResources(Object Display, TextWriter Output, String resourceType, Nullable`1 includeLocation, Nullable`1 excludeLocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 394
+   at CallSite.Target(Closure , CallSite , CoreShapes , Object , TextWriter , String , ResourceLocation , Object )
+   at Orchard.Core.Shapes.CoreShapes.HeadScripts(Object Display, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 320
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.DocumentZone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 280
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_MyTheme_Views_Document_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Document.cshtml:line 40
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 101
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-03 10:06:44,032 [62] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:44,268 [62] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:44,472 [62] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:45,631 [89] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 244689598-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:45,922 [89] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:06:46,103 [89] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:49,937 [82] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:50,135 [82] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:50,359 [82] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:51,433 [12] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 244689598-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:51,825 [12] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:07:52,026 [12] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/jquery.flexslider.js
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:12:51,012 [17] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:12:51,323 [17] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:12:51,593 [17] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:13:48,554 [68] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:13:48,757 [68] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:13:48,986 [68] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Themes/MyTheme/scripts/html5shiv.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Themes/MyTheme/scripts/html5shiv.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:16:42,105 [83] Piedone.Combinator.CombinedResourceManager - Default - Error when combining Style files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://fonts.googleapis.com/css?family=Lobster&subset=latin failed. ---> System.ArgumentException: File 736119256-1.css already exists
+   at Orchard.FileSystems.Media.FileSystemStorageProvider.CreateFile(String path) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\FileSystems\Media\FileSystemStorageProvider.cs:line 280
+   at Piedone.Combinator.Services.CacheFileService.Save(Int32 hashCode, CombinatorResource resource)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass11.<Combine>b__f(CombinatorResource combinedResource, IEnumerable`1 containedResources)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass2.<CombineStylesheets>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.CombineStylesheets(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:33:56,787 [8] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Core/Shapes/scripts/jquery.flexslider.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Core/Shapes/scripts/jquery.flexslider.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManageExtensions.Get[TResult](ILockingCacheManager lockingCacheManager, String key, Func`2 acquire, Func`1 fallback)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<CombineScripts>b__6(ResourceLocation location)
+   at Piedone.Combinator.Services.CombinatorService.CombineScripts(IList`1 resources, ICombinatorSettings settings)
+   at Piedone.Combinator.CombinedResourceManager.BuildRequiredResources(String stringResourceType)
+2015-06-03 10:33:56,978 [8] Piedone.Combinator.CombinedResourceManager - Default - Error when combining JavaScript files
+ http://localhost:57310/
+Orchard.OrchardException: Processing of resource http://localhost:57310/Core/Shapes/scripts/jquery.flexslider.js failed. ---> Orchard.OrchardException: Local resource file not found under ~/Core/Shapes/scripts/jquery.flexslider.js
+   at Piedone.Combinator.Services.ResourceFileService.FetchLocalResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceFileService.LoadResourceContent(CombinatorResource resource)
+   at Piedone.Combinator.Services.ResourceProcessingService.ProcessResource(CombinatorResource resource, StringBuilder combinedContent, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   --- End of inner exception stack trace ---
+   at Piedone.Combinator.Services.CombinatorService.Combine(IList`1 resources, Int32 hashCode, ResourceType resourceType, ICombinatorSettings settings)
+   at Piedone.Combinator.Services.CombinatorService.<>c__DisplayClass9.<>c__DisplayClassd.<CombineScripts>b__7(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.<>c__DisplayClass2`1.<Get>b__0(AcquireContext`1 ctx)
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheManager.Get[TResult](String key, Func`2 acquire, Func`1 fallback, TimeSpan timeout)
+   at Piedone.HelpfulLibraries.Tasks.LockingCacheMa

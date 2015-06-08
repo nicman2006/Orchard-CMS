@@ -1,0 +1,5 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id d33c6c6c4ae44d9a86847608207f6479 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature SchoolPointe.RelatedContent. Refer to the error logs for more information.</Message>
+</RecipeJournal>

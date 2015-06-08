@@ -1,0 +1,300 @@
+2015-06-02 11:28:10,533 [36] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/
+System.Web.HttpCompileException (0x80004005): c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Layout.cshtml(25): error CS0118: 'Orchard.Mvc.ViewEngines.Razor.WebViewPage<TModel>.Script' is a 'property' but is used like a 'type'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-02 11:28:11,210 [54] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/favicon.ico
+System.Web.HttpCompileException (0x80004005): c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Layout.cshtml(25): error CS0118: 'Orchard.Mvc.ViewEngines.Razor.WebViewPage<TModel>.Script' is a 'property' but is used like a 'type'
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-02 11:28:36,910 [75] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/favicon.ico
+System.Web.HttpCompileException (0x80004005): c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Layout.cshtml(25): error CS0103: The name 'ResourceLocation' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-06-02 11:31:24,458 [54] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'Piedone.HelpfulLibraries'
+ http://localhost:57310/favicon.ico
+System.IO.FileNotFoundException: Could not load file or assembly 'Piedone.HelpfulLibraries' or one of its dependencies. Не удается найти указанный файл.
+File name: 'Piedone.HelpfulLibraries'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-06-02 11:31:24,468 [54] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'Piedone.HelpfulLibraries' for project '/Modules/Piedone.Combinator/Piedone.Combinator.csproj' cannot be loaded
+ http://localhost:57310/favicon.ico
+2015-06-02 11:31:24,551 [54] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'Piedone.HelpfulLibraries'
+ http://localhost:57310/favicon.ico
+System.IO.FileNotFoundException: Could not load file or assembly 'Piedone.HelpfulLibraries' or one of its dependencies. Не удается найти указанный файл.
+File name: 'Piedone.HelpfulLibraries'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2015-06-02 11:31:24,551 [54] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'Piedone.HelpfulLibraries' for project '/Modules/Piedone.Combinator/Piedone.Combinator.csproj' cannot be loaded
+ http://localhost:57310/favicon.ico
+2015-06-02 11:34:30,192 [28] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:34:30,872 [28] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:34:30,926 [28] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:34:30,930 [28] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,438 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,974 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,975 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,977 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,978 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,979 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,980 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,980 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,981 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 11:52:50,982 [40] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 12:03:29,302 [54] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 12:03:29,303 [54] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 12:03:29,306 [54] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-06-02 12:03:29,310 [54] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displ

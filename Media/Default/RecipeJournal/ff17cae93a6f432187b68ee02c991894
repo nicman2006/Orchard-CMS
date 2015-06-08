@@ -1,0 +1,9 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id ff17cae93a6f432187b68ee02c991894 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Sequence contains more than one matching element. Refer to the error logs for more information.</Message>
+</RecipeJournal>

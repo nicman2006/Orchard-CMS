@@ -1,0 +1,45 @@
+.blog-posts
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.blog-post
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+article.blog-post header a
+{
+   font-size: 26px;
+   font-weight:bold; 
+   color:  #0026ff;
+}
+article.blog-post header h1
+{
+   font-size: 26px;
+   font-weight:bold; 
+   color:  #873d8f;
+}
+article.blog-post header a:hover
+{
+   color: #ff6a00;
+}
+.blog>header
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.blog>header>div.metadata
+{
+    visibility: hidden;
+}
+
+.blog>header>h1
+{
+    font-size: 30px;
+   font-weight:bold; 
+   color:#873d8f;
+}
+

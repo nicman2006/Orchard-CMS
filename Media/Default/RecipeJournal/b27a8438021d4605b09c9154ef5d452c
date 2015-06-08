@@ -1,0 +1,5 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id b27a8438021d4605b09c9154ef5d452c was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature Orchard.Media. Refer to the error logs for more information.</Message>
+</RecipeJournal>

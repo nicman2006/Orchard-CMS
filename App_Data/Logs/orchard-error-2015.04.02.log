@@ -1,0 +1,374 @@
+2015-04-02 13:08:09,084 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:08:10,159 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:08:10,356 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:08:10,361 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:13:56,100 [13] Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager - Default - ObjectDisposedException thrown from IShapeTableEventHandler by Castle.Proxies.IShapeTableEventHandlerProxy
+ http://ipos.by/Packaging/PackagingServices/InstallGallery?packageId=Orchard.Module.M33.SystemEditor&version=1.4.0&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) in c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:line 222
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) in c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:line 346
+   at Autofac.Features.Indexed.KeyedServiceIndex`2.get_Item(TKey key) in c:\Projects\OSS\autofac\Core\Source\Autofac\Features\Indexed\KeyedServiceIndex.cs:line 47
+   at Orchard.Events.DefaultOrchardEventBus.<NotifyHandlers>d__0.MoveNext() in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 38
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.Events.DefaultOrchardEventBus.Notify(String messageName, IDictionary`2 eventData) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 27
+   at Orchard.Events.EventsInterceptor.Intercept(IInvocation invocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\EventsInterceptor.cs:line 26
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:13:57,138 [13] Orchard.DisplayManagement.Descriptors.DefaultShapeTableManager - Default - ObjectDisposedException thrown from IShapeTableEventHandler by Castle.Proxies.IShapeTableEventHandlerProxy
+ http://ipos.by/Packaging/PackagingServices/InstallGallery?packageId=Orchard.Module.M33.SystemEditor&version=1.4.0&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) in c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:line 222
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) in c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:line 346
+   at Autofac.Features.Indexed.KeyedServiceIndex`2.get_Item(TKey key) in c:\Projects\OSS\autofac\Core\Source\Autofac\Features\Indexed\KeyedServiceIndex.cs:line 47
+   at Orchard.Events.DefaultOrchardEventBus.<NotifyHandlers>d__0.MoveNext() in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 38
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Orchard.Events.DefaultOrchardEventBus.Notify(String messageName, IDictionary`2 eventData) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 27
+   at Orchard.Events.EventsInterceptor.Intercept(IInvocation invocation) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\EventsInterceptor.cs:line 26
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:14:02,867 [13] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://ipos.by/Packaging/PackagingServices/InstallGallery?packageId=Orchard.Module.M33.SystemEditor&version=1.4.0&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) in c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:line 222
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 185
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 94
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 30
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_TheAdmin_Views_Layout_cshtml.<Execute>b__42(Object x) in d:\IPOS\Themes\TheAdmin\Views\Layout.cshtml:line 21
+   at CallSite.Target(Closure , CallSite , Func`2 , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at ASP._Page_Themes_TheAdmin_Views_Layout_cshtml.Execute() in d:\IPOS\Themes\TheAdmin\Views\Layout.cshtml:line 41
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 151
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 185
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 94
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 30
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2015-04-02 13:27:10,757 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,553 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,556 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,557 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,558 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,560 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,561 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,562 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,566 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:11,577 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:23,899 [8] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:24,369 [8] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:24,549 [8] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:27:24,553 [8] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:55:57,619 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:55:57,620 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:55:57,624 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 13:55:57,626 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:27:25,952 [15] Orchard.Recipes.Services.RecipeStepExecutor - Default - Recipe execution 2c7cfc243ee14692b37430fbcb83ffaf was cancelled because a step failed to execute
+ http://ipos.by/Packaging/PackagingServices/InstallPackageDetails?packageId=Orchard.Module.Contrib.Ace&version=1.4.0.3&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+Orchard.OrchardException: Failed to get state for feature js.Emmet
+   at Orchard.Environment.Features.FeatureManager.<>c__DisplayClass39.<EnableFeature>b__2d(String fId) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 176
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Orchard.Environment.Features.FeatureManager.<EnableFeature>b__2b(String currentFeatureId, IDictionary`2 featuresState) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 167
+   at Orchard.Environment.Features.FeatureManager.GetAffectedFeatures(String featureId, IDictionary`2 features, Func`3 getAffectedDependencies) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 226
+   at Orchard.Environment.Features.FeatureManager.EnableFeature(String featureId, IDictionary`2 availableFeatures, Boolean force) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 185
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Environment.Features.FeatureManager.EnableFeatures(IEnumerable`1 featureIds, Boolean force) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 72
+   at Orchard.Recipes.RecipeHandlers.FeatureRecipeHandler.ExecuteRecipeStep(RecipeContext recipeContext)
+   at Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+2015-04-02 14:27:26,066 [15] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://ipos.by/Packaging/PackagingServices/InstallPackageDetails?packageId=Orchard.Module.Contrib.Ace&version=1.4.0.3&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+Orchard.OrchardCoreException: Recipe execution with id 2c7cfc243ee14692b37430fbcb83ffaf was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature js.Emmet. Refer to the error logs for more information.
+   at Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+   at Orchard.Recipes.Services.RecipeScheduler.ExecuteWork(String executionId)
+   at Orchard.Events.DelegateHelper.<>c__DisplayClass2b`2.<BuildAction>b__2a(Object target, Object[] p) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DelegateHelper.cs:line 116
+   at Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 81
+   at Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 53
+2015-04-02 14:28:08,253 [9] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:28:08,713 [9] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:28:08,888 [9] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:28:08,923 [9] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:49,773 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,276 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,278 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,279 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,280 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,281 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,282 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,283 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,283 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:29:50,286 [15] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:45:05,630 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:45:06,283 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:45:06,458 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 14:45:06,463 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 15:55:48,584 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 15:55:48,586 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 15:55:48,589 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-04-02 15:55:48,591 [13] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Themes
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17

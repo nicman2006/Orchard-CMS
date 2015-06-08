@@ -1,0 +1,35 @@
+2014-09-25 14:32:04,256 [9] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:32:07,493 [10] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:32:36,083 [10] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:32:59,907 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/about
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:33:07,360 [9] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/products/bi
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:33:13,325 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/products/b2b
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2014-09-25 14:44:16,166 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://localhost:8081/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29

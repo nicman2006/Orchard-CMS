@@ -1,0 +1,482 @@
+/*
+Resource bundle created by Combinator (http://combinator.codeplex.com/)
+
+Resources in this bundle:
+- http://localhost:57310/Modules/Orchard.DesignerTools/Styles/orchard-designertools-shapetracing.css
+- http://localhost:57310/Modules/Orchard.DesignerTools/styles/CodeMirror/codemirror.css
+- http://localhost:57310/Modules/Orchard.DesignerTools/styles/CodeMirror/razor.css
+- http://localhost:57310/Modules/Orchard.DesignerTools/styles/CodeMirror/javascript.css
+- http://localhost:57310/Modules/Orchard.DesignerTools/styles/CodeMirror/css.css
+- http://localhost:57310/Modules/Orchard.Localization/Styles/orchard-localization-base.css
+- http://fonts.googleapis.com/css?family=Lobster&subset=latin
+*/
+
+
+/* 
+    shape tracing container styles reset 
+    must contain all tags used in the container
+*/
+
+/* Global
+***************************************************************/
+#shape-tracing-container * {
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+      border-radius: 2px;
+}
+
+/* Links
+***************************************************************/
+#shape-tracing-container a, #shape-tracing-container a:link, #shape-tracing-container a:visited {
+    color:rgba(0, 94, 153, 0.8);
+    text-decoration:none;
+    background-color:transparent;
+}
+#shape-tracing-container a:hover, #shape-tracing-container a:active, #shape-tracing-container a:focus {
+    color:rgba(0, 94, 153, 1.0);
+    text-decoration:none;
+    background-color:transparent;
+}
+
+/* Forms
+***************************************************************/
+#shape-tracing-container input[type="submit"],
+#shape-tracing-container input[type="button"],
+#shape-tracing-container button,
+#shape-tracing-container .button {
+    color:rgba(0, 94, 153, 0.8);
+    padding:0;
+    margin:0;
+    border:1px solid rgba(154, 155, 157, 1.0);
+    background:rgba(236, 241, 242, 1.0);
+    
+     /*CSS3 properties*/
+     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#fffcf1f2',  endColorstr='#ffeffcfc');   
+	 background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(251, 252, 252, 1.0)), to(rgba(236, 241, 242, 1.0)));    
+     background: -moz-linear-gradient(top, rgba(251, 252, 252, 1.0), rgba(236, 241, 242, 1.0));
+    }
+
+#shape-tracing-container input[type="submit"]:hover,
+#shape-tracing-container input[type="button"]:hover,
+#shape-tracing-container button:hover,
+#shape-tracing-container .button:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    color:#005e99;
+    color:rgba(0, 94, 153, 1.0);
+    border:1px solid rgba(0, 94, 153, 1.0);
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+
+button.create-template, button.create-template:hover, background-image:hover {
+    background-color:transparent;
+    background-image:none;
+    display:inline;
+}
+
+/* Layout
+***************************************************************/
+#shape-tracing-container ul, #shape-tracing-container li {
+    margin:0;
+    padding:0;
+    color:#000;
+    font-size:100%;
+    list-style-type:none;
+}
+
+#shape-tracing-container {
+    clear:both;
+    display:block;
+    font-size:10pt;
+    font-family:Segoe UI,Trebuchet,Arial,Sans-Serif;;
+    left: 0px;
+    bottom: 0px;
+    position:fixed;
+    z-index:999;
+    width:100%;
+    display:none;
+    max-height:66%;
+    height:24px; /* handle (21) + toolbar (3) */
+    min-height:24px;
+    padding:0;
+    margin:0;
+}
+
+#shape-tracing-meta-content {
+    overflow:auto;
+}
+
+#shape-tracing-container .shape, #shape-tracing-container .model {
+    padding:8px 0 30px 0;
+    padding-left:30px;
+}
+
+#shape-tracing-toolbar  {
+    color:#333;
+    background:rgba(236, 241, 242, 1.0);
+    border:1px solid rgba(182, 188, 189, 1.0);
+    height:21px;
+    padding-top:0;
+    padding-left:5px;
+    padding-right:5px;
+    margin:0;
+     
+     /*CSS3 properties*/
+     /*----In ie the first couplet sets the alpha value so 00=transparent and ff=opaque)----*/    
+     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#fffcf1f2',  endColorstr='#ffeffcfc');   
+	 background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(251, 252, 252, 1.0)), to(rgba(236, 241, 242, 1.0)));    
+     background: -moz-linear-gradient(top, rgba(251, 252, 252, 1.0), rgba(236, 241, 242, 1.0));
+}
+
+#shape-tracing-toolbar-switch  {
+    display:block;
+    float:right;
+    width:14px;
+    height:100%;
+    background: url("/Modules/Orchard.DesignerTools/Styles/images/expand.png") no-repeat;
+    margin-top:3px;
+}
+
+#shape-tracing-toolbar-switch.expanded {
+    background: url("/Modules/Orchard.DesignerTools/Styles/images/collapse.png") no-repeat;
+}
+
+/* 
+    this element is behind the stw to ensure the document is bigger and a scrollbar is added on the document
+    so that the stw doesn't hide some content
+*/
+#shape-tracing-container-ghost  {
+    width:100%;
+    display:block;
+}
+
+#shape-tracing-resize-handle  {
+    width:100%;
+    display:block;
+    height:5px;
+    background-color:transparent;
+    cursor:n-resize;
+}
+
+.shape-tracing-overlay {
+    background-color:#EBEFF9;
+    cursor: pointer;
+}
+
+.shape-tracing-tree-overlay {
+    background-color:#eee;
+    cursor: pointer;
+}
+
+#shape-tracing-window {
+    background: #fff;
+}
+
+#shape-tracing-window-tree {
+    display:block;
+    float:left;
+    overflow:auto;
+    width:33%;
+    border-right:2px solid rgba(182, 188, 189, 0.8);
+    background:#fff;
+}
+
+#shape-tracing-window-tree li  {
+    clear:both;
+    line-height:20px;
+}
+
+.shape-tracing-selected {
+    background-color: #EBEFF9;
+}
+
+#shape-tracing-window .shape-tracing-selected  {
+    background:#2c66c3;
+    color:#fff;
+    
+     /*----In ie the first couplet sets the alpha value so 00=transparent and ff=opaque)----*/    
+     filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#ff3875d7',  endColorstr='#ff2c66c3')	
+	 background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(56, 117, 215, 1.0)), to(rgba(44, 102, 195, 1.0)));    
+     background: -moz-linear-gradient(top, rgba(56, 117, 215, 1.0), rgba(44, 102, 195, 1.0));
+}
+
+#shape-tracing-window-tree ul {
+    margin:0 0 0 18px;
+    padding:0 0 0 4px;
+    list-style-type:none;
+}
+
+#shape-tracing-window-tree li > div {}
+
+#shape-tracing-window-content {
+    padding:0 0 0 6px;
+}
+
+#shape-tracing-window .expando-glyph {
+    background:transparent no-repeat 0 -19px;
+    background-image:url("/Modules/Orchard.DesignerTools/Styles/images/menu-glyph.png");
+    padding-left:15px;
+}
+
+#shape-tracing-window .expando-glyph:hover {
+    background-image:url("/Modules/Orchard.DesignerTools/Styles/images/menu-glyph.png");
+}
+
+#shape-tracing-window .expando-glyph-container  {
+    float:left;
+    display:block;
+    width:15px;
+    margin-left:-15px;
+    cursor:default;
+}
+
+#shape-tracing-window .expando-glyph-container.closed .expando-glyph  {
+    background-repeat:no-repeat;
+    background-image:url("/Modules/Orchard.DesignerTools/Styles/images/menu-glyph.png");
+    background-position:0 3px;
+}
+
+#shape-tracing-window .expando-glyph-container.closed .expando-glyph:hover {
+    background-image:url("/Modules/Orchard.DesignerTools/Styles/images/menu-glyph.png");
+}
+
+#shape-tracing-window .expando-glyph-container.closing .expando-glyph 
+{
+    background-repeat:no-repeat;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    -webkit-transform:rotate(-90deg) translate(3px, -3px);
+    -moz-transform:rotate(-90deg) translate(3px, -3px);
+    transform:rotate(-90deg) translate(3px, -3px);
+}
+
+#shape-tracing-window .expando-glyph-container.opening .expando-glyph 
+{
+    background-repeat:no-repeat;
+    -webkit-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    -webkit-transform:rotate(90deg) translate(3px, 3px);
+    -moz-transform:rotate(90deg) translate(3px, 3px);
+    transform:rotate(90deg) translate(3px, 3px);
+}
+
+#shape-tracing-overlay  {
+    display:none;
+    background-color:#0015FF;
+    position:absolute;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    z-index:2;
+}
+
+/* Tabs
+***************************************************************/
+
+#shape-tracing-tabs li {
+    display: inline;
+    font-size:14px;
+    padding: 4px 18px;
+    color:#005e99;
+    color:rgba(0, 94, 153, 0.8);
+    text-decoration:none;
+}
+
+ul#shape-tracing-tabs {
+    padding:8px 0;
+    border-bottom:1px solid rgba(182, 188, 189, 1.0);
+    background:rgba(236, 241, 242, 1.0);
+    
+    /*CSS3 properties*/
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#fffcf1f2',  endColorstr='#ffeffcfc');   
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(251, 252, 252, 1.0)), to(rgba(236, 241, 242, 1.0)));    
+    background: -moz-linear-gradient(top, rgba(251, 252, 252, 1.0), rgba(236, 241, 242, 1.0));
+}
+
+#shape-tracing-tabs li.middle, #shape-tracing-tabs li.first, #shape-tracing-tabs li.last {
+    border:1px solid rgba(154,155,157,1.0);
+    background-color: #F5F5F5;
+}
+
+#shape-tracing-tabs li.first {margin:0 0 0 4px;}
+
+#shape-tracing-tabs li:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    color:#005e99;
+    color:rgba(0, 94, 153, 1.0);
+    border:1px solid rgba(0, 94, 153, 1.0);
+    text-decoration:none;
+    cursor:pointer;
+}
+#shape-tracing-tabs li.selected {
+    background-color:rgba(255, 255, 255, 0.9);
+    color:rgba(51, 51, 51, 1.0);
+    border:1px solid rgba(102, 102, 102, 1.0);
+}
+#shape-tracing-window-content .grid-display {
+    position:relative;
+}
+
+#shape-tracing-window-content .grid-display li {
+    clear:both;
+}
+
+#shape-tracing-window-content .grid-display ul ul {
+    margin:0 0 0 18px;
+    padding:0 0 0 10px;
+    list-style-type:none;
+}
+
+#shape-tracing-window-content .grid-display div.name {
+    float:left;
+}
+
+#shape-tracing-window-content .grid-display div.type, #shape-tracing-window-content .grid-display div.value {
+    position:absolute;
+    left:40%;
+    white-space:nowrap;
+}
+
+#shape-tracing-window-content div.model div.type, #shape-tracing-window-content div.model div.value {
+    left:66%;
+}
+
+#shape-tracing-breadcrumb {
+    background:rgba(236, 241, 242, 1.0);
+    border-bottom:1px solid rgba(182, 188, 189, 1.0);
+    padding: 3px 0 0 4px;
+    font-weight:700;
+    height: 18px; 
+}
+
+.CodeMirror {
+    height:auto;
+    overflow:hidden !important;
+}.CodeMirror {
+  overflow: auto;
+  line-height: 1em;
+  font-family: Consolas, Monospace;
+  font-size:10pt;
+  _position: relative; /* IE6 hack */
+}
+
+.CodeMirror-gutter {
+  position: absolute; left: 0; top: 0;
+  background-color: #f7f7f7;
+  border-right: 1px solid #eee;
+  min-width: 2em;
+  height: 100%;
+}
+.CodeMirror-gutter-text {
+  color: #aaa;
+  text-align: right;
+  padding: .4em .2em .4em .4em;
+}
+.CodeMirror-lines {
+  padding: .4em;
+}
+
+.CodeMirror pre 
+{
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-width: 0; margin: 0; padding: 0; background: transparent;
+  font-family: inherit;
+}
+
+.CodeMirror-cursor {
+  z-index: 10;
+  position: absolute;
+  visibility: hidden;
+  border-left: 1px solid black !important;
+}
+.CodeMirror-focused .CodeMirror-cursor {
+  visibility: visible;
+}
+
+span.CodeMirror-selected {
+  background: #ccc !important;
+  color: HighlightText !important;
+}
+.CodeMirror-focused span.CodeMirror-selected {
+  background: Highlight !important;
+}
+
+
+.CodeMirror-matchingbracket {color: #0f0 !important;}
+.CodeMirror-nonmatchingbracket {color: #f22 !important;}
+span.xml-tag {color: rgb(163,21,21);}
+span.xml-attribute {color: rgb(0,0,255);}
+span.xml-attname {color: rgb(255,0,0);}
+span.xml-comment {color: rgb(0,128,0);}
+span.xml-cdata {color: #777;}
+span.xml-processing {color: #777;}
+span.xml-entity {color: #a22;}
+
+span.razor {background-color: rgb(236, 242, 245)}
+span.razor-tag {background-color: yellow;}
+span.razor-keyword {color: blue; background-color: rgb(236, 242, 245)}
+span.razor-string {color: rgb(163,21,21); background-color: rgb(236, 242, 245)}
+
+.CodeMirror 
+{
+    font-family:Consolas, Monospace;
+    font-size:10pt;
+    line-height:12pt;
+}
+span.js-keyword {color: #90b;}
+span.js-atom {color: #291;}
+span.js-variabledef {color: #00f;}
+span.js-localvariable {color: #049;}
+span.js-comment {color: #a70;}
+span.js-string {color: #a22;}
+span.css-at {color: #708;}
+span.css-unit {color: #281;}
+span.css-value {color: #708;}
+span.css-identifier {color: black;}
+span.css-selector {color: #11B;}
+span.css-important {color: #00F;}
+span.css-colorcode {color: #299;}
+span.css-comment {color: #A70;}
+span.css-string {color: #A22;}
+.content-localization {
+    overflow:hidden;
+}
+.content-localization .content-localizations,
+.content-localization .add-localization {
+    clear:right;
+    float:right;
+}
+.content-localization .content-localizations {
+    font-size:.9em;
+}
+.content-localization .content-localizations li,
+.content-localization .add-localization {
+    display:inline;
+    list-style: none;
+    line-height:0;
+    margin: 0 .2em;
+}
+.content-localization .content-localizations li::after {
+    content:",";
+}
+.content-localization .content-localizations li:last-child::after {
+    content:"";
+}
+.content-localization .content-localizations>* {
+    display:inline;
+}
+.content-localization .localizations {
+    margin:0;
+}
+
+.content-localization .content-localizations li::after {
+    content:", ";
+}
+.content-localization .content-localizations li:last-child::after {
+    content:"";
+}

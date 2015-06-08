@@ -1,0 +1,5 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id 2c7cfc243ee14692b37430fbcb83ffaf was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature js.Emmet. Refer to the error logs for more information.</Message>
+</RecipeJournal>

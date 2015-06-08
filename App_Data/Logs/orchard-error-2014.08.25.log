@@ -1,0 +1,637 @@
+2014-08-25 10:19:50,634 [16] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Web.HttpCompileException: c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Modules\Szmyd.Orchard.Modules.Menu\Views\Menu.cshtml(2): error CS0246: The type or namespace name 'Szmyd' could not be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Core_Navigation_Views_Parts_MenuWidget_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Core\Navigation\Views\Parts.MenuWidget.cshtml:line 1
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.ContentZone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 274
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Modules_Orchard_Widgets_Views_Widget_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Modules\Orchard.Widgets\Views\Widget.cshtml:line 1
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Core.Shapes.CoreShapes.Zone(Object Display, Object Shape, TextWriter Output) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard.Web\Core\Shapes\CoreShapes.cs:line 267
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.PerformInvoke(DisplayContext displayContext, MethodInfo methodInfo, Object serviceInstance) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 64
+   at Orchard.DisplayManagement.Descriptors.ShapeAttributeStrategy.ShapeAttributeBindingStrategy.<>c__DisplayClass4.<CreateDelegate>b__3(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAttributeStrategy\ShapeAttributeBindingStrategy.cs:line 55
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at ASP._Page_Themes_MyTheme_Views_Layout_cshtml.<Execute>b__9b(Object x) in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Layout.cshtml:line 20
+   at CallSite.Target(Closure , CallSite , Func`2 , Object )
+   at ASP._Page_Themes_MyTheme_Views_Layout_cshtml.Execute() in c:\Users\kovalenko\Documents\My Web Sites\Orchard CMS\Themes\MyTheme\Views\Layout.cshtml:line 67
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.HtmlHelper.RenderPartialInternal(String partialViewName, ViewDataDictionary viewData, Object model, TextWriter writer, ViewEngineCollection viewEngineCollection)
+   at System.Web.Mvc.Html.PartialExtensions.Partial(HtmlHelper htmlHelper, String partialViewName, Object model, ViewDataDictionary viewData)
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.Render(ShapeDescriptor shapeDescriptor, DisplayContext displayContext, HarvestShapeInfo harvestShapeInfo, HarvestShapeHit harvestShapeHit) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 146
+   at Orchard.DisplayManagement.Descriptors.ShapeTemplateStrategy.ShapeTemplateBindingStrategy.<>c__DisplayClass26.<>c__DisplayClass28.<Discover>b__15(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeTemplateStrategy\ShapeTemplateBindingStrategy.cs:line 133
+   at Orchard.DisplayManagement.Descriptors.ShapeAlterationBuilder.<>c__DisplayClass3.<>c__DisplayClass5.<BoundAs>b__2(DisplayContext displayContext) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Descriptors\ShapeAlterationBuilder.cs:line 56
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Process(ShapeBinding shapeBinding, IShape shape, DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 183
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.Execute(DisplayContext context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 87
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.ShapeExecute(Object shape) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 86
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.Invoke(String name, INamedEnumerable`1 parameters) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 43
+   at Orchard.DisplayManagement.Implementation.DisplayHelper.TryInvoke(InvokeBinder binder, Object[] args, Object& result) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DisplayHelper.cs:line 29
+   at CallSite.Target(Closure , CallSite , Object , Object )
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.<>c__DisplayClass7.<FindView>b__5(ViewContext viewContext, TextWriter writer, IViewDataContainer viewDataContainer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 63
+   at Orchard.Mvc.ViewEngines.ThemeAwareness.LayoutAwareViewEngine.LayoutView.Render(ViewContext viewContext, TextWriter writer) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Mvc\ViewEngines\ThemeAwareness\LayoutAwareViewEngine.cs:line 90
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+2014-08-25 10:34:20,436 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:20,491 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:20,566 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:20,566 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:21,553 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:21,553 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:21,590 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:21,591 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:21,630 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:21,630 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:21,669 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:21,669 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:21,708 [12] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:21,709 [12] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/
+2014-08-25 10:34:28,507 [18] Orchard.Recipes.Services.RecipeStepExecutor - Default - Recipe execution d33c6c6c4ae44d9a86847608207f6479 was cancelled because a step failed to execute
+ http://localhost:57310/Packaging/PackagingServices/InstallPackageDetails?packageId=Orchard.Module.SchoolPointe.Menus&version=0.9&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+Orchard.OrchardException: Failed to get state for feature SchoolPointe.RelatedContent
+   at Orchard.Environment.Features.FeatureManager.<>c__DisplayClass39.<EnableFeature>b__2d(String fId) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 172
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Orchard.Environment.Features.FeatureManager.<EnableFeature>b__2b(String currentFeatureId, IDictionary`2 featuresState) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 167
+   at Orchard.Environment.Features.FeatureManager.GetAffectedFeatures(String featureId, IDictionary`2 features, Func`3 getAffectedDependencies) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 226
+   at Orchard.Environment.Features.FeatureManager.EnableFeature(String featureId, IDictionary`2 availableFeatures, Boolean force) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 185
+   at Orchard.Environment.Features.FeatureManager.<>c__DisplayClass9.<EnableFeatures>b__4(String featureId) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 73
+   at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Orchard.Environment.Features.FeatureManager.EnableFeatures(IEnumerable`1 featureIds, Boolean force) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\Features\FeatureManager.cs:line 72
+   at Orchard.Recipes.RecipeHandlers.FeatureRecipeHandler.ExecuteRecipeStep(RecipeContext recipeContext)
+   at Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+2014-08-25 10:34:28,566 [18] Orchard.Exceptions.DefaultExceptionPolicy - Default - An unexpected exception was caught
+ http://localhost:57310/Packaging/PackagingServices/InstallPackageDetails?packageId=Orchard.Module.SchoolPointe.Menus&version=0.9&sourceId=1&redirectUrl=%2FPackaging%2FGallery%2FModules
+Orchard.OrchardCoreException: Recipe execution with id d33c6c6c4ae44d9a86847608207f6479 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature SchoolPointe.RelatedContent. Refer to the error logs for more information.
+   at Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+   at Orchard.Recipes.Services.RecipeScheduler.ExecuteWork(String executionId)
+   at Orchard.Events.DelegateHelper.<>c__DisplayClass2b`2.<BuildAction>b__2a(Object target, Object[] p) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DelegateHelper.cs:line 116
+   at Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 80
+   at Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Events\DefaultOrchardEventBus.cs:line 53
+2014-08-25 10:34:30,373 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,373 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,409 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,409 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,449 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,450 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,555 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,555 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,594 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,594 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,634 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,635 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,673 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,673 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,712 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,712 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,760 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,761 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:34:30,802 [21] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ http://localhost:57310/Packaging/Gallery/Modules
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:34:30,802 [21] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ http://localhost:57310/Packaging/Gallery/Modules
+2014-08-25 10:35:53,397 [24] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ (null)
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:35:53,398 [24] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ (null)
+2014-08-25 10:35:53,433 [24] Orchard.Environment.DefaultAssemblyLoader - Default - Error loading assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL'
+ (null)
+System.IO.FileNotFoundException: Could not load file or assembly 'ClaySharp, Version=1.0.0.0, Culture=neutral' or one of its dependencies. The system cannot find the file specified.
+File name: 'ClaySharp, Version=1.0.0.0, Culture=neutral'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2014-08-25 10:35:53,433 [24] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Default - Assembly reference 'ClaySharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL' for project '/Modules/SchoolPointe.Menus/SchoolPointe.Menus.csproj' cannot be loaded
+ (null)
+2014-08-25 10:37:15,447 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,840 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,841 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,842 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,843 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,845 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,846 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,847 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,848 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2014-08-25 10:37:15,850 [12] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://localhost:57310/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 84
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17

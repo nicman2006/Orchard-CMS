@@ -1,0 +1,74 @@
+2015-03-23 00:36:00,240 [9] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed
+ (null)
+System.Data.SqlServerCe.SqlCeException (0x80004005): Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2015-03-23 00:36:00,332 [9] Orchard.Tasks.BackgroundService - (null) - Error while processing background task
+ (null)
+NHibernate.TransactionException: Begin failed with SQL exception ---> System.Data.SqlServerCe.SqlCeException: Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   at NHibernate.Impl.SessionImpl.BeginTransaction(IsolationLevel isolationLevel)
+   at Orchard.Data.SessionLocator.RequireNew(IsolationLevel level)
+   at Orchard.Tasks.BackgroundService.Sweep()
+2015-03-23 00:36:00,333 [9] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed
+ (null)
+System.Data.SqlServerCe.SqlCeException (0x80004005): Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2015-03-23 00:36:00,333 [9] Orchard.Tasks.BackgroundService - (null) - Error while processing background task
+ (null)
+NHibernate.TransactionException: Begin failed with SQL exception ---> System.Data.SqlServerCe.SqlCeException: Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   at NHibernate.Impl.SessionImpl.BeginTransaction(IsolationLevel isolationLevel)
+   at Orchard.Data.SessionLocator.RequireNew(IsolationLevel level)
+   at Orchard.Tasks.BackgroundService.Sweep()
+2015-03-23 00:36:00,334 [9] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed
+ (null)
+System.Data.SqlServerCe.SqlCeException (0x80004005): Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2015-03-23 00:36:00,334 [9] Orchard.Tasks.BackgroundService - (null) - Error while processing background task
+ (null)
+NHibernate.TransactionException: Begin failed with SQL exception ---> System.Data.SqlServerCe.SqlCeException: Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   --- End of inner exception stack trace ---
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+   at NHibernate.Impl.SessionImpl.BeginTransaction(IsolationLevel isolationLevel)
+   at Orchard.Data.SessionLocator.RequireNew(IsolationLevel level)
+   at Orchard.Tasks.BackgroundService.Sweep()
+2015-03-23 00:36:00,335 [9] NHibernate.Transaction.AdoTransaction - (null) - Begin transaction failed
+ (null)
+System.Data.SqlServerCe.SqlCeException (0x80004005): Unspecified error [ sqlcese40.dll ]
+   at System.Data.SqlServerCe.SqlCeConnection.Open(Boolean silent)
+   at System.Data.SqlServerCe.SqlCeConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.AdoNet.ConnectionManager.GetConnection()
+   at NHibernate.Transaction.AdoTransaction.Begin(IsolationLevel isolationLevel)
+2015-03-23 00:36:00,335 [9] Orchard.Tasks.BackgroundService - (null) - Error while processing background task
+ (null)
+NHibernate.TransactionException: Begin failed with SQL exception ---> System.Da

@@ -1,0 +1,422 @@
+2015-02-11 00:38:31,527 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://www.ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 01:47:50,336 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 06:36:18,472 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 06:36:18,636 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:08:52,934 [7] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:08:53,070 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:22:01,576 [19] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:22:37,672 [19] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:25:47,474 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:26:29,573 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:27:27,967 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:32:04,227 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:32:04,322 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:32:46,379 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 10:56:19,378 [10] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:07:57,019 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:07:59,518 [14] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:08:23,400 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Items
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:08:25,067 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Items
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:08:25,189 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Items
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:08:25,320 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Items
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:08:25,446 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Items
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:14:56,854 [14] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:16:51,930 [3] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://www.ipos.by/products/bi
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:17:16,079 [3] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://www.ipos.by/about
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:17:47,952 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://www.ipos.by/products/b2c
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:31:11,165 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:31:13,090 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 11:50:46,714 [3] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Sunkist.FeaturedItemSlider/Groups
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 12:38:55,662 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 12:43:17,435 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/hrm
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 12:43:22,223 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/b2b
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:04:36,146 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:04:36,430 [7] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:44:43,472 [7] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:45:05,631 [10] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/about
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:52:44,797 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:56:33,771 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 15:58:13,103 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:06,093 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/bi
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:11,670 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/b2b
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:13,322 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/b2c
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:14,904 [14] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/products/hrm
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:15,731 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Orchard.MediaLibrary/MediaItem/31?_=1423659635282
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:16,908 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/about
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:26,329 [12] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/clients
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:00:27,475 [13] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:01:27,144 [11] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:01:36,046 [12] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:03:00,214 [8] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:15:10,799 [12] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:18:20,670 [15] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Orchard.MediaLibrary/MediaItem/28?_=1423660720497
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:18:34,607 [10] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:25,857 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:25,868 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:25,869 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:25,893 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:38,841 [16] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/Edit/116
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:19:38,842 [16] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/Edit/116
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:20:13,201 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:20:13,212 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:20:13,213 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:20:13,230 [6] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:21:06,291 [20] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:21:06,301 [20] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:21:06,303 [20] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:21:06,319 [20] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List?model.Id=Page
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:24:27,092 [16] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:28:32,410 [22] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:28:32,423 [22] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:28:32,425 [22] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:28:32,440 [22] Orchard.Time.SiteTimeZoneSelector - Default - TimeZone could not be loaded
+ http://ipos.by/Admin/Contents/List
+System.TimeZoneNotFoundException: The time zone ID 'Kaliningrad Standard Time' was not found on the local computer.
+   at System.TimeZoneInfo.FindSystemTimeZoneById(String id)
+   at Orchard.Time.SiteTimeZoneSelector.GetTimeZone(HttpContextBase context) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\Time\SiteTimeZoneSelector.cs:line 29
+2015-02-11 16:45:19,087 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,655 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,657 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,658 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,659 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,660 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,661 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,663 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,664 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17
+2015-02-11 16:45:19,665 [14] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - Default - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null]]
+ http://ipos.by/Admin/Modules
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext)
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in z:\Builds\work\d1eb156ccc3cb14\src\Orchard\InvokeExtensions.cs:line 17

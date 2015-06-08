@@ -1,0 +1,9 @@
+﻿Name: System Editor
+AntiForgery: enabled
+Author: Rickard Magnusson, M33
+Website: http://www.m33.se
+Version: 1.4.0
+OrchardVersion: 1.3.9
+Description: Let's you edit javascript, css and Razor files.
+FeatureDescription: Let's you edit and save css, js, and razor files in a colorized mode. Also edit placement and theme settings Theme.txt and images.
+Category: Developer
